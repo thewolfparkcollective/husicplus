@@ -1,0 +1,107 @@
+html, body, #root {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(120deg, #e0eafe 0%, #f8fafd 100%);
+  min-height: 100vh;
+}
+header {
+  background: transparent;
+  padding: 32px 0 12px;
+  text-align: center;
+  color: #2d375a;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 18px;
+  box-shadow: 0 12px 48px 0 rgba(108, 99, 255, 0.13), 0 1.5px 12px 0 rgba(14,210,247, 0.09);
+  backdrop-filter: blur(22px);
+  padding: 36px 28px 26px 28px;
+  margin: 36px auto;
+  max-width: 420px;
+  border: 1.5px solid rgba(108, 99, 255, 0.09);
+  transition: box-shadow 0.2s;
+}
+input.input {
+  padding: 10px 14px;
+  border-radius: 9px;
+  border: 1.5px solid #e3e8f7;
+  background: #f8fafd;
+  color: #2d375a;
+  margin: 7px 0;
+  font-size: 1.06em;
+  width: 90%;
+  transition: border .2s;
+}
+input.input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+.btn {
+  background: linear-gradient(90deg, #6C63FF 0%, #0ED2F7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 6px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 16px 0 rgba(108, 99, 255, 0.13);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #0ED2F7 0%, #6C63FF 100%);
+  box-shadow: 0 4px 20px 0 rgba(14,210,247, 0.16);
+}
+.feed-card {
+  background: rgba(255,255,255,0.82);
+  border-radius: 19px;
+  box-shadow: 0 8px 36px 0 rgba(108, 99, 255, 0.13);
+  padding: 22px;
+  width: 270px;
+  color: #222;
+  margin-bottom: 22px;
+  transition: transform 0.15s, box-shadow 0.2s;
+  backdrop-filter: blur(16px);
+  border: 1.2px solid rgba(108, 99, 255, 0.08);
+}
+.feed-card:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 48px 0 rgba(14,210,247, 0.18);
+}
+.feed-card img {
+  width: 100%;
+  border-radius: 13px;
+  margin-bottom: 13px;
+  background: #e8eefa;
+}
+.feed-card h3 {
+  margin: 10px 0 4px;
+  font-size: 1.15em;
+}
+.feed-card .tags {
+  font-size: 13px;
+  color: #6c63ff;
+}
+@media (max-width: 800px) {
+  .feed-card {
+    width: 95vw;
+    min-width: 210px;
+    max-width: 99vw;
+  }
+  .glass {
+    max-width: 99vw;
+    padding: 22px 8vw;
+  }
+}
